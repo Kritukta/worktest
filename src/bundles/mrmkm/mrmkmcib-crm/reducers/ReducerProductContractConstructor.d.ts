@@ -1,0 +1,3 @@
+import * as ModelsProductContractConstructor from "../models/ModelsProductContractConstructor";
+declare const reducerProductContractConstructor: import("redux-actions").Reducer<ModelsProductContractConstructor.IProductContractConstructorState, ModelsProductContractConstructor.IProductContractConstructorState>;
+export default reducerProductContractConstructor;

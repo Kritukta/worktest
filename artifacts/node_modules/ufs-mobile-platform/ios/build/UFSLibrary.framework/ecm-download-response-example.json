@@ -1,0 +1,26 @@
+{
+  "success": false,
+  "body": {
+    "operationId": "non id Excepteur fugiat"
+  },
+  "error": {
+    "uuid": "occaecat ullamco",
+    "system": "si"
+  },
+  "messages": [
+    {
+      "title": "qui ",
+      "type": "commodo non irure",
+      "text": "anim irure incididunt ut"
+    },
+    {
+      "title": "sit adipisicing",
+      "text": "id pariatur",
+      "type": "dolor ut esse Duis irure"
+    },
+    {
+      "type": "aliqua proident eu",
+      "text": "ut "
+    }
+  ]
+}

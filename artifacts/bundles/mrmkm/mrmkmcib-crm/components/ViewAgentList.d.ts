@@ -1,0 +1,66 @@
+import React from 'react';
+import { Models as ModelsApp } from "mrmkmcib-app";
+import { Models } from "mrmkmcib-crm";
+import { Enums } from '../Enums';
+import * as ModelsAgent from "../models/ModelsAgent";
+import * as ModelsAgentList from "../models/ModelsAgentList";
+import Error from "../models/Error";
+export interface ISelectClassifierProps {
+    performSelect: {
+        (value: ModelsApp.Classifier): void;
+    };
+    classifierList: ModelsApp.ClassifierList;
+    testID: string;
+    selectedCode: string | undefined;
+}
+export interface IProps {
+    performAgentDelete: ModelsAgentList.PERFORM_AGENT_DELETE;
+    navigateToPrincipalPickerScreen: ModelsAgentList.NAVIGATE_TO_PRINCIPAL_PICKER_SCREEN;
+    performAgentListPrincipal: ModelsAgentList.PERFORM_AGENT_LIST_PRINCIPAL;
+    performOpenAgentScreen: ModelsAgent.PERFORM_OPEN_AGENT_SCREEN;
+    performInputAgentSearch: ModelsAgentList.PERFORM_INPUT_AGENT_SEARCH;
+    performAgentSearchListSelect: ModelsAgentList.PERFORM_AGENT_SEARCH_LIST_SELECT;
+    navigateToAgentSearchScreen: ModelsAgentList.NAVIGATE_TO_AGENT_SEARCH_SCREEN;
+    performMenuAgentAddShow: ModelsAgentList.PERFORM_MENU_AGENT_ADD_SHOW;
+    performMenuAgentAddHide: ModelsAgentList.PERFORM_MENU_AGENT_ADD_HIDE;
+    performSave: ModelsAgentList.PERFORM_SAVE;
+    searchAgentStringRequest: string;
+    performEdit: ModelsAgentList.PERFORM_EDIT;
+    performCancel: ModelsAgentList.PERFORM_CANCEL;
+    navigateBack: ModelsAgentList.NAVIGATE_BACK;
+    agentListContextMode: Enums.AgentListContextMode;
+    agentListMode: Enums.AgentListMode;
+    inputAgentSearch: string;
+    inputAgentRole: ModelsApp.Classifier | null;
+    isVisiblePopoverMenu: boolean;
+    refreshInProgress: boolean;
+    refreshError: Error | null;
+    inputAgentList: Models.AgentList;
+    agentListFetching: boolean;
+    agentListError: Error | null;
+    agentListCachedDate: Date | null;
+    agentSearchList: Models.AgentList;
+    agentSearchListFetching: boolean;
+    agentSearchListError: Error | null;
+    agentSearchListCachedDate: Date | null;
+    isVisibleAgentListErrorModalWindow: boolean;
+    agentListSaveInProgress: boolean;
+    agentListSaveError: Error | null;
+    classifierDictionary: ModelsApp.ClassifierDictionary;
+    testID: string;
+    performOpenAgentDeletePanel: ModelsAgentList.PERFORM_OPEN_AGENT_DELETE_PANEL;
+    performCloseAgentDeletePanel: ModelsAgentList.PERFORM_CLOSE_AGENT_DELETE_PANEL;
+    agentListOpenedDeletePanel: Models.Agent[];
+    performPopoverAddHide: ModelsAgentList.PERFORM_POPOVER_ADD_HIDE;
+    performCloseAgentListScreen: ModelsAgentList.PERFORM_CLOSE_AGENT_LIST_SCREEN;
+    currentCustomerManaged: Models.CustomerManaged | null;
+    agentListAccessLevel: Enums.AgentListAccessLevel;
+    performCancelSearchAgent: ModelsAgentList.PERFORM_CANCEL_SEARCH_AGENT;
+    performSelectAgentJobPosition: ModelsAgentList.PERFORM_SELECT_AGENT_JOB_POSITION;
+    performInputAgentJobPosition: ModelsAgentList.PERFORM_INPUT_AGENT_JOB_POSITION;
+    inputAgentJobPosition: string;
+    callGetAgentSearchList: ModelsAgentList.CALL_GET_AGENT_SEARCH_LIST;
+    performChangeDisplayAgentListErrorModalWindow: ModelsAgentList.PERFORM_CHANGE_AGENT_LIST_ERROR_MODAL_WINDOW;
+}
+declare const ViewAgentList: React.StatelessComponent<IProps>;
+export default ViewAgentList;

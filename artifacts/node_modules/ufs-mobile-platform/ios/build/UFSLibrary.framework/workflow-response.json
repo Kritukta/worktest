@@ -1,0 +1,66 @@
+{
+    "id": "http://sber-tech.com/efs/workflow-response.json",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Workflow Response",
+    "description": "A response with parameter values",
+    "type": "object",
+    "properties": {
+        "success": {
+            "description": "The result flag of operation [required]",
+            "type": "boolean"
+        },
+        "body": {
+            "id": "#body",
+            "description": "The result body of operation [optional]",
+            "type": "object",
+            "properties": {},
+            "additionalProperties": true
+        },
+        "error": {
+            "id": "#error",
+            "type": "object",
+            "description": "The error in response [optional]",
+            "properties": {
+                "uuid": {
+                    "type": "string"
+                },
+                "code": {
+                    "type": "string"
+                },
+                "system": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "text": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "id": "#message",
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "type": "string"
+                    },
+                    "text": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false
+            }
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "success"
+    ]
+}

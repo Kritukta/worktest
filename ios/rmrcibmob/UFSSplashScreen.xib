@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ufs-big-logo" translatesAutoresizingMaskIntoConstraints="NO" id="WM3-HG-Wf4">
+                    <rect key="frame" x="457" y="329" width="111" height="111"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="111" id="Xhb-iO-gsb"/>
+                        <constraint firstAttribute="height" constant="111" id="lpx-n1-pdW"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WM3-HG-Wf4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="F2Q-FY-FK6"/>
+                <constraint firstItem="WM3-HG-Wf4" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="mHq-of-5Rk"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ufs-big-logo" width="278" height="278"/>
+    </resources>
+</document>

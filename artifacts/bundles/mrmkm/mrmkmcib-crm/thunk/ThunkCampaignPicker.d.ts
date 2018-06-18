@@ -1,0 +1,12 @@
+import * as ModelState from '../models/Models';
+import { Models } from 'mrmkmcib-crm';
+export declare const navigateToCampaignPickerScreen: () => (dispatch: Function) => void;
+export declare const performCampaignSearch: () => (dispatch: Function) => void;
+export declare const performCampaignInputSearch: (CampaignInputSearch: string) => (dispatch: Function) => void;
+export declare const performCampaignSearchModeDisable: () => (dispatch: Function) => void;
+export declare const performCampaignSearchModeEnable: () => (dispatch: Function) => void;
+export declare const performSalesCampaignListRefresh: () => (dispatch: Function) => void;
+export declare const callGetSalesCampaignListClean: () => (dispatch: Function) => void;
+export declare const callGetSalesCampaignList: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performSalesCampaignSelect: (salesCampaign: Models.SalesCampaign) => (dispatch: Function) => void;
+export declare const navigateBack: () => (dispatch: Function) => void;

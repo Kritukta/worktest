@@ -1,0 +1,142 @@
+{
+    "id": "http://sber-tech.com/efs/sup-api-response.json",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "PARAM Response",
+    "description": "A responce with parameter values",
+    "type": "object",
+    "properties": {
+        "success": {
+            "description": "The result flag of operation [required]",
+            "type": "boolean"
+        },
+        "body": {
+            "id": "#body",
+            "description": "The result body of operation [optional]",
+            "type": "object",
+            "properties": {
+                "parameters": {
+                    "description": "The list of parameters [required]",
+                    "type": "array",
+                    "items": {
+                        "id": "#parameter",
+                        "description": "The parameter",
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "description": "Parameter name [required]",
+                                "type": "string",
+                                "maxLength": 200
+                            },
+                            "path": {
+                                "description": "The path to parameter value [optional]",
+                                "type": "array",
+                                "items": {
+                                    "id": "#path-element",
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "description": "Path element name [required]",
+                                            "type": "string",
+                                            "maxLength": 200
+                                        },
+                                        "value": {
+                                            "description": "Path element value [required]",
+                                            "type": "string",
+                                            "maxLength": 200
+                                        }
+                                    },
+                                    "additionalProperties": false,
+                                    "required": [
+                                                 "name",
+                                                 "value"
+                                                 ]
+                                },
+                                "minItems": 1
+                            },
+                            "type": {
+                                "description": "Parameter type [required]",
+                                "type": "string",
+                                "enum": ["STRING", "LONG", "DOUBLE", "BOOLEAN", "DATE"],
+                                "maxLength": 200
+                            },
+                            "values": {
+                                "description": "Parameter values [required]",
+                                "type": "array",
+                                "items": {
+                                    "type": "string",
+                                    "maxLength": 4000
+                                },
+                                "minItems": 0
+                            }
+                        },
+                        "additionalProperties": false,
+                        "required": [
+                                     "name",
+                                     "type",
+                                     "values"
+                                     ]
+                    },
+                    "minItems": 0
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                         "parameters"
+                         ]
+        },
+        "error" : {
+            "id" : "#error",
+            "type" : "object",
+            "description" : "The error in response [optional]",
+            "properties" : {
+                "uuid" : {
+                    "type" : "string",
+                    "maxLength": 4000
+                },
+                "code" : {
+                    "type" : "string",
+                    "maxLength": 4000
+                },
+                "system" : {
+                    "type" : "string",
+                    "maxLength": 4000
+                },
+                "title" : {
+                    "type" : "string",
+                    "maxLength": 4000
+                },
+                "text" : {
+                    "type" : "string",
+                    "maxLength": 4000
+                }
+            },
+            "additionalProperties": false
+        },
+        "messages" : {
+            "type" : "array",
+            "items" : {
+                "id": "#message",
+                "type" : "object",
+                "properties" : {
+                    "title" : {
+                        "type" : "string",
+                        "maxLength": 4000
+                    },
+                    "text" : {
+                        "type" : "string",
+                        "maxLength": 4000
+                    },
+                    "type" : {
+                        "type" : "string",
+                        "maxLength": 4000
+                    }
+                },
+                "additionalProperties": false
+            }
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+                 "success"
+                 ]
+}

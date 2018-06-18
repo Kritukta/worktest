@@ -1,0 +1,12 @@
+{
+  "name": "mrmkmcib-crm",
+  "version": "0.0.1",
+  "typings": "mrmkmcib-crm",
+  "dependencies": {
+    "moment": "^2.18.1",
+    "lodash": "^4.14.68"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.68"
+  }
+}

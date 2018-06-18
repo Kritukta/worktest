@@ -1,0 +1,9 @@
+{
+  "type" : "object",
+  "id" : "urn:jsonschema:ru:sbrf:efs:platform:security:api:rs:ApplicationRequest",
+  "properties" : {
+    "channelName" : {
+      "type" : "string"
+    }
+  }
+}

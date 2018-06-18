@@ -1,0 +1,80 @@
+{
+  "success": true,
+  "body": {
+    "parameters": [
+      {
+        "name": "deserunt est nostrud quis",
+        "type": "LONG",
+        "value": [
+          "laborum inc",
+          "proident",
+          "qui ad",
+          "est"
+        ],
+        "path": [
+          {
+            "name": "velit Duis sed",
+            "value": "deserunt elit"
+          },
+          {
+            "name": "do Lorem aute laboris",
+            "value": "ut irure"
+          },
+          {
+            "name": "aliqua et",
+            "value": "deserunt veniam aliquip eiusmod"
+          },
+          {
+            "name": "cillum ex culpa",
+            "value": "tempor nisi"
+          }
+        ]
+      },
+      {
+        "name": "velit non ut",
+        "type": "STRING",
+        "value": [
+          "anim",
+          "adipisicing"
+        ],
+        "path": [
+          {
+            "name": "quis repr",
+            "value": "Lorem ea enim aute consectetur"
+          },
+          {
+            "name": "ut velit in aute Lorem",
+            "value": "amet"
+          }
+        ]
+      },
+      {
+        "name": "nulla laboris velit veniam nostrud",
+        "type": "DATE",
+        "value": [
+          "elit ipsum est non",
+          "ea",
+          "dolor exercitation Ut ut eiusmod",
+          "dolor Ut laborum",
+          "esse quis qui"
+        ],
+        "path": [
+          {
+            "name": "cillum Lorem Ut enim",
+            "value": "dolor nostrud reprehenderit"
+          }
+        ]
+      },
+      {
+        "name": "pariatur eu ea dolor cupidatat",
+        "type": "DOUBLE"
+      }
+    ]
+  },
+  "messages": [
+    {
+      "text": "cupidatat deseru",
+      "type": "Excepteur adipisicing"
+    }
+  ]
+}

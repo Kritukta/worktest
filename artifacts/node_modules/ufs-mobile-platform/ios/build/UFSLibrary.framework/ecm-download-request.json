@@ -1,0 +1,43 @@
+{
+  "id" : "http://efs-mobile-ecm/download-request.json",
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "type" : "object",
+  "title" : "Запрос на выгрузку файла из ecm",
+  "properties" : {
+    "fileId" : {
+      "type" : "string",
+      "title" : "ИД документа в ECM",
+      "maxLength" : 256
+    },
+    "user" : {
+      "type" : "string",
+      "title" : "Название пользователя  в ECM",
+      "maxLength" : 256
+    },
+    "scenarioId" : {
+      "type" : "string",
+      "title" : "Уникальный идентификатор сценария ТФС",
+      "maxLength" : 36
+    },
+    "cachePolicy" : {
+      "id" : "#cachePolicy",
+      "type" : "object",
+      "properties" : {
+        "type" : {
+          "type" : "string",
+          "title" : "Тип загрузки файла - из кэша или из ECM",
+          "enum" : [ "CACHE", "DIRECT" ],
+          "maxLength" : 10
+        },
+        "maxTTL" : {
+          "type" : "integer",
+          "title" : "Максимальное время жизни документа в файловом кэше в секундах"
+        }
+      },
+      "required" : [ "type" ],
+      "additionalProperties" : false
+    }
+  },
+  "required" : [ "fileId", "scenarioId", "cachePolicy" ],
+  "additionalProperties" : false
+}

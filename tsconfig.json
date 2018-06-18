@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "jsx": "react",
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "preserveConstEnums": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    "outDir": "./artifacts"
+
+  },
+  "filesGlob": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/mrmkmcib-app/tests/",
+    "ios/build",
+    "typings/index.d.ts",
+    "ios/DerivedData"
+  ],
+  "types": [
+    "mathjs",
+    "react",
+    "react-native",
+    "react-native-drawer",
+    "react-native-orientation",
+    "react-navigation",
+    "jest"
+  ],
+  "compileOnSave": false
+}

@@ -1,0 +1,30 @@
+{
+  "name": "rmrcibmob",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start -- --reset-cache",
+    "run-device": "npm run build && concurrently -r 'npm run watch' 'react-native run-ios --simulator=\"iPad Air 2\"'",
+    "tsc": "tsc --pretty",
+    "watch": "npm run build -- -w",
+    "clean": "rimraf artifacts",
+    "build": "npm run clean && npm run tsc --"
+  },
+  "dependencies": {
+    "react": "15.4.1",
+    "react-native": "0.42.0",
+    "react-redux": "5.0.6",
+    "moment": "^2.18.1",
+    "lodash": "^4.14.68",
+    "ufs-mobile-platform": "2.17.0-dev"
+  },
+  "devDependencies": {
+    "@types/react": "15.0.1",
+    "@types/react-native": "0.42.0",
+    "@types/react-redux": "^5.0.18",
+    "concurrently": "3.5.0",
+    "rimraf": "2.6.1",
+    "@types/lodash": "^4.14.68",
+    "typescript": "2.3.3"
+  }
+}

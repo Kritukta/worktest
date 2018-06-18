@@ -1,0 +1,22 @@
+import * as ModelState from "../models/Models";
+import { Models as ModelsApp } from "mrmkmcib-app";
+import { Enums } from '../Enums';
+export declare const DEAL_TYPE_CLASSIFIER_PAGE_NAME = "\u0412\u044B\u0431\u043E\u0440 \u0442\u0438\u043F\u0430 \u0441\u0434\u0435\u043B\u043A\u0438";
+export declare const PRODUCT_CLASSIFIER_PAGE_NAME = "\u0412\u044B\u0431\u043E\u0440 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u0430";
+export declare const SALES_METHOD_CLASSIFIER_PAGE_NAME = "\u0412\u044B\u0431\u043E\u0440 \u043C\u0435\u0442\u043E\u0434\u0430";
+export declare const CURRENCY_CLASSIFIER_PAGE_NAME = "\u0412\u044B\u0431\u043E\u0440 \u0432\u0430\u043B\u044E\u0442\u044B";
+export declare const AGENT_NOTE_PAGE_NAME = "\u0412\u044B\u0431\u043E\u0440 \u0442\u0438\u043F\u0430 \u0437\u0430\u043C\u0435\u0442\u043A\u0438";
+export declare const NAVIGATE_BACK_BUTTON_TITLE_NEW_DEAL = "\u041D\u043E\u0432\u0430\u044F \u0441\u0434\u0435\u043B\u043A\u0430";
+export declare const NAVIGATE_BACK_BUTTON_TITLE_DEAL_STAGE = "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0435 \u0441\u0442\u0430\u0434\u0438\u0438";
+export declare const FULL_SCREEN_ENABLED: boolean;
+export declare const FULL_SCREEN_DISABLED: boolean;
+export declare const performSearch: (value: string) => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const showSearchLine: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const hideSearchLine: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performInit: (list: ModelsApp.ClassifierList, value: string | null, mode: Enums.ClassifierMode, pageName: string | null, navigateBackButtonTitle: string | null, isFullScreenEnabled: boolean) => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performEnableSearch: (isSearchEnable: boolean) => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+/******************/
+export declare const performSelect: (value: ModelsApp.Classifier) => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const navigateBack: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const navigateToClassifier: (classifierList: ModelsApp.ClassifierList, initialValue: string, mode: Enums.ClassifierMode, warningMessage?: string | null | undefined) => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const setClassifierWarning: (warningMessage: string | null) => (dispatch: Function, getState: () => ModelState.IRootState) => void;

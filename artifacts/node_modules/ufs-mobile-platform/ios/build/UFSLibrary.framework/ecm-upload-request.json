@@ -1,0 +1,218 @@
+{
+  "id" : "http://efs-mobile-ecm/file.json",
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "type" : "object",
+  "title" : "Структура Файла ЕСМ",
+  "description" : "Структура Файла ЕСМ",
+  "properties" : {
+    "clazz" : {
+      "type" : "string",
+      "title" : "",
+      "maxLength" : 255
+    },
+    "id" : {
+      "type" : "string",
+      "title" : "",
+      "maxLength" : 255
+    },
+    "scenarioInfo" : {
+      "type" : "object",
+      "title" : "Сценарий",
+      "properties" : {
+        "scenarioId" : {
+          "type" : "string",
+          "title" : "Идентификатор сценария",
+          "maxLength" : 36
+        }
+      },
+      "additionalProperties" : false
+    },
+    "systemInfo" : {
+      "type" : "object",
+      "title" : "Системная информация для ЕСМ",
+      "properties" : {
+        "contentType" : {
+          "type" : "string",
+          "title" : "MIME-тип контента документа",
+          "maxLength" : 256
+        },
+        "retrievalName" : {
+          "type" : "string",
+          "title" : "Имя контента документа",
+          "maxLength" : 256
+        }
+      },
+      "additionalProperties" : false
+    },
+    "folderTarget" : {
+      "type" : "string",
+      "title" : "Относительный путь к общей папке ТФС и ECM",
+      "maxLength" : 2048
+    },
+    "fileInfo" : {
+      "id" : "http://efs-mobile-ecm/file-info.json",
+      "$schema" : "http://json-schema.org/draft-04/schema#",
+      "type" : "object",
+      "title" : "Документ",
+      "description" : "Документ",
+      "properties" : {
+        "name" : {
+          "type" : "string",
+          "title" : "Относительный путь к файлу в общей папки ТФС и ECM с уникальным наименованием файла",
+          "maxLength" : 1024
+        },
+        "businessName" : {
+          "type" : "string",
+          "title" : "Бизнес название файла. Заполняется на стороне ЕСМ",
+          "maxLength" : 1024
+        },
+        "checkSum" : {
+          "type" : "string",
+          "title" : "Контрольная сумма файла",
+          "maxLength" : 255
+        }
+      },
+      "additionalProperties" : false
+    },
+    "businessAttrs" : {
+      "id" : "#businessAttrs",
+      "type" : "object",
+      "title" : "Используется на стороне ЕСМ.Тег контейнер, который содержит список атрибутов, которые выгружаются из хранилища ЕСМ вместе с документом",
+      "properties" : {
+        "dateTimeAttrs" : {
+          "type" : "array",
+          "items" : {
+            "id" : "#attrDateType",
+            "type" : "object",
+            "title" : "Атрибут с датой",
+            "properties" : {
+              "name" : {
+                "type" : "string",
+                "title" : "Название атрибута",
+                "maxLength" : 256
+              },
+              "dateTimeValue" : {
+                "type" : "string",
+                "format" : "date-time",
+                "title" : "Данные атрибута",
+                "maxLength" : 256
+              }
+            },
+            "required" : [ "id", "value" ],
+            "additionalProperties" : false
+          }
+        },
+        "stringAttrs" : {
+          "type" : "array",
+          "items" : {
+            "id" : "#attrStringType",
+            "type" : "object",
+            "title" : "Атрибут c текстовыми данными",
+            "properties" : {
+              "name" : {
+                "type" : "string",
+                "title" : "Название атрибута",
+                "maxLength" : 256
+              },
+              "strValue" : {
+                "type" : "string",
+                "title" : "Данные атрибута",
+                "maxLength" : 256
+              }
+            },
+            "required" : [ "id", "value" ],
+            "additionalProperties" : false
+          }
+        },
+        "intAttrs" : {
+          "type" : "array",
+          "items" : {
+            "id" : "#attrIntType",
+            "type" : "object",
+            "title" : "Атрибут c числовыми данными",
+            "properties" : {
+              "name" : {
+                "type" : "string",
+                "title" : "Название атрибута",
+                "maxLength" : 256
+              },
+              "intValue" : {
+                "type" : "integer",
+                "title" : "Данные атрибута"
+              }
+            },
+            "required" : [ "id", "value" ],
+            "additionalProperties" : false
+          }
+        },
+        "boolAttrs" : {
+          "type" : "array",
+          "items" : {
+            "id" : "#attrBoolType",
+            "type" : "object",
+            "title" : "Атрибут c логическими данными",
+            "properties" : {
+              "name" : {
+                "type" : "string",
+                "title" : "Название атрибута",
+                "maxLength" : 256
+              },
+              "boolValue" : {
+                "type" : "boolean",
+                "title" : "Данные атрибута"
+              }
+            },
+            "required" : [ "id", "value" ],
+            "additionalProperties" : false
+          }
+        },
+        "binAttrs" : {
+          "type" : "array",
+          "items" : {
+            "id" : "#attrByteType",
+            "type" : "object",
+            "title" : "Атрибут c бинарными данными",
+            "properties" : {
+              "name" : {
+                "type" : "string",
+                "title" : "Название атрибута",
+                "maxLength" : 256
+              },
+              "byteValue" : {
+                "type" : "string",
+                "format" : "byte",
+                "title" : "Данные атрибута",
+                "maxLength" : 52428800
+              }
+            },
+            "required" : [ "id", "value" ],
+            "additionalProperties" : false
+          }
+        },
+        "doubleAttrs" : {
+          "type" : "array",
+          "items" : {
+            "id" : "#attrDoubleType",
+            "type" : "object",
+            "title" : "Атрибут c числовыми данными",
+            "properties" : {
+              "name" : {
+                "type" : "string",
+                "title" : "Название атрибута",
+                "maxLength" : 256
+              },
+              "dblAttr" : {
+                "type" : "number",
+                "title" : "Данные атрибута"
+              }
+            },
+            "required" : [ "id", "value" ],
+            "additionalProperties" : false
+          }
+        }
+      },
+      "additionalProperties" : false
+    }
+  },
+  "additionalProperties" : false
+}

@@ -1,0 +1,46 @@
+{
+    "criteria": [
+                 {
+                 "parameter": "sunt",
+                 "path": [
+                          {
+                          "name": "ut ut et consectetur ex",
+                          "value": "in incididunt cupidatat"
+                          },
+                          {
+                          "name": "incididunt",
+                          "value": "quis exercitation sint non"
+                          },
+                          {
+                          "name": "sint irure anim",
+                          "value": "esse quis irure"
+                          }
+                          ]
+                 },
+                 {
+                 "parameter": "cillum",
+                 "path": [
+                          {
+                          "name": "id sit nisi",
+                          "value": "amet eu occaecat Excepteur laborum"
+                          },
+                          {
+                          "name": "eiusmod nulla irure",
+                          "value": "enim esse amet"
+                          },
+                          {
+                          "name": "Lorem dolor enim s",
+                          "value": "ex amet ad labore"
+                          },
+                          {
+                          "name": "officia ipsum",
+                          "value": "nostrud consec"
+                          },
+                          {
+                          "name": "ea",
+                          "value": "veniam culpa incididunt"
+                          }
+                          ]
+                 }
+                 ]
+}

@@ -1,0 +1,70 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "properties": {
+        "body": {
+            "id": "/properties/body",
+            "items": {
+                "id": "/properties/body/items",
+                "properties": {
+                    "appId": {
+                        "id": "/properties/body/items/properties/appId",
+                        "type": "string"
+                    },
+                    "applicationIcon": {
+                        "id": "/properties/body/items/properties/applicationIcon",
+                        "type": "string"
+                    },
+                    "channelName": {
+                        "id": "/properties/body/items/properties/channelName",
+                        "type": "string"
+                    },
+                    "default": {
+                        "id": "/properties/body/items/properties/default",
+                        "type": "boolean"
+                    },
+                    "deviceType": {
+                        "id": "/properties/body/items/properties/deviceType",
+                        "type": "string"
+                    },
+                    "id": {
+                        "id": "/properties/body/items/properties/id",
+                        "type": "string"
+                    },
+                    "name": {
+                        "id": "/properties/body/items/properties/name",
+                        "type": "string"
+                    },
+                    "order": {
+                        "id": "/properties/body/items/properties/order",
+                        "type": "integer"
+                    },
+                    "settings": {
+                        "id": "/properties/body/items/properties/settings",
+                        "type": "string"
+                    },
+                    "title": {
+                        "id": "/properties/body/items/properties/title",
+                        "type": "string"
+                    },
+                    "url": {
+                        "id": "/properties/body/items/properties/url",
+                        "type": "string"
+                    },
+                    "version": {
+                        "id": "/properties/body/items/properties/version",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "success": {
+            "id": "/properties/success",
+            "type": "boolean"
+        }
+    },
+    "type": "object"
+}

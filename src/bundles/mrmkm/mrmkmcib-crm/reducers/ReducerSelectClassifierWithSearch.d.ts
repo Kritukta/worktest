@@ -1,0 +1,2 @@
+declare const reducerSelectClassifierWithSearch: any;
+export default reducerSelectClassifierWithSearch;

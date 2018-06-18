@@ -1,0 +1,385 @@
+{
+  "success": true,
+  "body": {
+    "id": "1-M3CVK3",
+    "status": "Closed",
+    "products": [
+      {
+        "productName": "(МБ) Бизнес-авто",
+        "currencyClassifier": {
+          "code": "RUR",
+          "classifierName": "CURRENCY",
+          "value": "Рубль"
+        },
+        "sumInCurrency": "100000",
+        "sumInCurrencyEkv": "100000",
+        "additionalInfos": [
+          {
+            "order": "1",
+            "option": "СКР",
+            "value": "50"
+          }
+        ]
+      },
+      {
+        "productName": "Овердрафт",
+        "currencyClassifier": {
+          "code": "RUR",
+          "classifierName": "CURRENCY",
+          "value": "Рубль"
+        },
+        "sumInCurrency": "200000",
+        "sumInCurrencyEkv": "200000",
+        "additionalInfos": [
+          {
+            "order": "1",
+            "option": "СКР",
+            "value": "60"
+          }
+        ]
+      },
+      {
+        "productName": "ТЕСТ",
+        "currencyClassifier": {
+          "code": "RUR",
+          "classifierName": "CURRENCY",
+          "value": "Рубль"
+        },
+        "sumInCurrency": "300000",
+        "sumInCurrencyEkv": "300000",
+        "additionalInfos": [
+          {
+            "order": "1",
+            "option": "СКР",
+            "value": "540"
+          }
+        ]
+      }
+    ],
+    "phaseClassifier": {
+      "code": "1-PUC2O",
+      "classifierName": "CRM_SALE_STAGE",
+      "value": "1-PUC2O",
+      "parentValueId": "1-PUC2O"
+    },
+    "title": "тестовая сделка Стандарт",
+    "plannedFinishDate": "2015-06-30T00:00:00Z",
+    "finishDate": "2015-07-15T00:00:00Z",
+    "creationDate": "2015-04-22T00:00:00Z",
+    "progress": 5,
+    "salesMethodClassifier": {
+      "code": "1-P90RT",
+      "classifierName": "CRM_SALE_METHOD",
+      "value": "Изменение условий по договору"
+    },
+    "ownerId": "1-ARLR-13",
+    "team": [
+      {
+        "member": {
+          "person": {
+            "id": "1-ARLR-13",
+            "firstName": "Testcrmbabdaplandia",
+            "lastName": "Testcrmbabdaplandia",
+            "middleName": "Testcrmbabdaplandia",
+            "phones": []
+          }
+        },
+        "roleClassifier": {
+          "code": "Primary KM",
+          "classifierName": "SALES_TEAM_ROLE",
+          "value": "Главный КМ сделки"
+        },
+        "isGeneral": true
+      },
+      {
+        "member": {
+          "person": {
+            "id": "1-ARLR-1",
+            "firstName": "Testcrmkredit1",
+            "lastName": "Testcrmkredit1",
+            "middleName": "Testcrmkredit1",
+            "phones": []
+          }
+        },
+        "roleClassifier": {
+          "code": "KM Member",
+          "classifierName": "SALES_TEAM_ROLE",
+          "value": "КМ, участник сделки"
+        },
+        "isGeneral": false
+      }
+    ],
+    "closeReason": {
+      "code": "Other",
+      "classifierName": "SBRF_REQ_CLOSE_REASON",
+      "value": "Прочее"
+    },
+    "accountId": "aaaaaaaaaaaaaaa",
+    "accountName": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "modId": 0,
+    "requestType": "",
+    "sbrfEKPFlg": true,
+    "newLoanFlg": true,
+    "opptyOwner": "Testcrmmanager3 Testcrmmanager3 Testcrmmanager3",
+    "utilization": "4",
+    "probability": "70",
+    "parentOpptyId": "1-OPZYNV",
+    "parentOpptyDescription": "Родительская сделка ТЕСТ0101",
+    "terrCoverage": "11111111555",
+    "campaign": "кампания 3",
+    "attrChannel": "АКГ",
+    "staffCount": 0,
+    "system": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "completion": 5,
+    "historyStages": [
+      {
+        "prevValue": "052",
+        "newValue": "021",
+        "startDate": "2017-08-28T11:28:34Z",
+        "changedByFIO": "Testcrmbabdaplandia Testcrmbabdaplandia Testcrmbabdaplandia",
+        "durationFact": "",
+        "endDatePlanned": "2017-08-28T12:28:34Z",
+        "durationNorm": "1"
+      },
+      {
+        "prevValue": "05",
+        "newValue": "052",
+        "startDate": "2015-07-15T17:53:50Z",
+        "changedByFIO": "Testcrmbabdaplandia Testcrmbabdaplandia Testcrmbabdaplandia",
+        "endDate": "2017-08-28T11:28:34Z",
+        "durationFact": "4417",
+        "endDatePlanned": "2015-07-21T14:53:50Z",
+        "durationNorm": "48"
+      },
+      {
+        "prevValue": "03",
+        "newValue": "05",
+        "startDate": "2015-07-15T17:53:13Z",
+        "changedByFIO": "Testcrmriskmanager3 Testcrmriskmanager3 Testcrmriskmanager3",
+        "endDate": "2015-07-15T17:53:50Z",
+        "durationFact": "0",
+        "endDatePlanned": "2015-07-17T14:53:13Z",
+        "durationNorm": "16"
+      },
+      {
+        "prevValue": "031",
+        "newValue": "03",
+        "startDate": "2015-07-15T17:49:57Z",
+        "changedByFIO": "Testcrmriskdisp Testcrmriskdisp Testcrmriskdisp",
+        "endDate": "2015-07-15T17:53:13Z",
+        "durationFact": "0",
+        "endDatePlanned": "2015-07-17T14:49:57Z",
+        "durationNorm": "16"
+      },
+      {
+        "prevValue": "021",
+        "newValue": "031",
+        "startDate": "2015-07-15T17:47:37Z",
+        "changedByFIO": "Testcrmbabdaplandia Testcrmbabdaplandia Testcrmbabdaplandia",
+        "endDate": "2015-07-15T17:49:57Z",
+        "durationFact": "0",
+        "endDatePlanned": "2015-07-16T17:47:37Z",
+        "durationNorm": "8"
+      },
+      {
+        "prevValue": "052",
+        "newValue": "021",
+        "startDate": "2015-07-15T17:44:47Z",
+        "changedByFIO": "Testcrmbabdaplandia Testcrmbabdaplandia Testcrmbabdaplandia",
+        "endDate": "2015-07-15T17:47:37Z",
+        "durationFact": "0",
+        "endDatePlanned": "2015-07-16T10:44:47Z",
+        "durationNorm": "1"
+      },
+      {
+        "prevValue": "05",
+        "newValue": "052",
+        "startDate": "2015-07-13T10:43:04Z",
+        "changedByFIO": "Testcrmbabdaplandia Testcrmbabdaplandia Testcrmbabdaplandia",
+        "endDate": "2015-07-15T17:44:47Z",
+        "durationFact": "23",
+        "endDatePlanned": "2015-07-18T15:43:04Z",
+        "durationNorm": "48"
+      },
+      {
+        "prevValue": "021",
+        "newValue": "05",
+        "startDate": "2015-07-13T10:42:51Z",
+        "changedByFIO": "Testcrmbabdaplandia Testcrmbabdaplandia Testcrmbabdaplandia",
+        "endDate": "2015-07-13T10:43:04Z",
+        "durationFact": "0",
+        "endDatePlanned": "2015-07-15T10:42:51Z",
+        "durationNorm": "16"
+      },
+      {
+        "prevValue": "052",
+        "newValue": "021",
+        "startDate": "2015-07-13T10:40:35Z",
+        "changedByFIO": "Testcrmbabdaplandia Testcrmbabdaplandia Testcrmbabdaplandia",
+        "endDate": "2015-07-13T10:42:51Z",
+        "durationFact": "0",
+        "endDatePlanned": "2015-07-13T11:40:35Z",
+        "durationNorm": "1"
+      },
+      {
+        "prevValue": "05",
+        "newValue": "052",
+        "startDate": "2015-07-11T11:15:15Z",
+        "changedByFIO": "Testcrmbabdaplandia Testcrmbabdaplandia Testcrmbabdaplandia",
+        "endDate": "2015-07-13T10:40:35Z",
+        "durationFact": "15",
+        "endDatePlanned": "2015-07-16T19:15:15Z",
+        "durationNorm": "48"
+      },
+      {}
+    ],
+    "comments": [
+      {
+        "type": "Desire",
+        "comment": "КОММЕНТ1",
+        "createdByFIO": "Testcrmbabdaplandia Testcrmbabdaplandia Testcrmbabdaplandia",
+        "createdByPosID": "1-ARLR-13",
+        "created": "2001-12-17T09:30:47Z"
+      },
+      {
+        "type": "Note",
+        "comment": "44444444",
+        "createdByFIO": "Testcrmbabdaplandia Testcrmbabdaplandia Testcrmbabdaplandia",
+        "createdByPosID": "1-ARLR-13",
+        "created": "2001-12-18T09:30:47Z"
+      },
+      {}
+    ],
+    "approvals": [
+      {
+        "fio": "Testcrmriskmanager1 Testcrmriskmanager1 Testcrmriskmanager1",
+        "posID": "1-AUMY-12",
+        "comment": "",
+        "action": "Да",
+        "date": "2015-07-15T17:51:29Z",
+        "durationTerm": "2015-07-16T15:49:56Z",
+        "result": ""
+      },
+      {
+        "fio": "Testcrmriskmanager1 Testcrmriskmanager1 Testcrmriskmanager1",
+        "posID": "1-AUMY-12",
+        "comment": "",
+        "action": "",
+        "durationTerm": "2015-07-11T17:13:09Z",
+        "result": "Отменено администратором системы"
+      },
+      {
+        "fio": "Testcrmriskmanager1 Testcrmriskmanager1 Testcrmriskmanager1",
+        "posID": "1-AUMY-12",
+        "comment": "",
+        "action": "Да",
+        "date": "2015-06-15T15:02:53Z",
+        "durationTerm": "2015-06-16T13:01:08Z",
+        "result": ""
+      }
+    ],
+    "contracts": [
+      {
+        "number": "asd-11922",
+        "status": "Open",
+        "privacy": false,
+        "date": "2016-06-09T00:00:00Z",
+        "contractClients": [
+          {
+            "id": "1-1AP93AF",
+            "name": "testOrg1473647620809"
+          }
+        ],
+        "contractTeamMembers": [
+          {
+            "posId": "1-4SH9G3",
+            "fio": "Testcrmbakd_Ca Testcrmbakd_Ca Testcrmbakd_Ca",
+            "main": false,
+            "position": "TESTCRMBAKD_CA"
+          },
+          {
+            "posId": "1-ARLR-13",
+            "fio": "Testcrmbabdaplandia Testcrmbabdaplandia Testcrmbabdaplandia",
+            "main": false,
+            "position": "RABOTNIK"
+          },
+          {
+            "posId": "1-AQ1N-33",
+            "fio": "Testcrmjuryhead Testcrmjuryhead Testcrmjuryhead",
+            "main": false,
+            "position": "TESTCRMJURYHEAD"
+          },
+          {
+            "posId": "1-AQ1N-91",
+            "fio": "Testcrmjurymanager1 Testcrmjurymanager1 Testcrmjurymanager1",
+            "main": false,
+            "position": "TESTCRMJURYMANAGER1"
+          },
+          {
+            "posId": "1-ARLR-1",
+            "fio": "Testcrmkredit1 Testcrmkredit1 Testcrmkredit1 (зам. Testcrmmanager8 Testcrmmanager8 Testcrmmanager8)",
+            "main": false,
+            "position": "TESTCRMKREDIT1"
+          },
+          {
+            "posId": "1-AQ1N-15",
+            "fio": "Testcrmkredit3 Testcrmkredit3 Testcrmkredit3",
+            "main": false,
+            "position": "TESTCRMKREDIT3"
+          },
+          {
+            "posId": "1-AQ1N-48",
+            "fio": "Testcrmkreditdoc1 Testcrmkreditdoc1 Testcrmkreditdoc1",
+            "main": false,
+            "position": "TESTCRMKREDITDOC1"
+          },
+          {
+            "posId": "1-AQ1N-49",
+            "fio": "Testcrmkreditdoc2 Testcrmkreditdoc2 Testcrmkreditdoc2",
+            "main": false,
+            "position": "TESTCRMKREDITDOC2"
+          },
+          {
+            "posId": "1-AQ1N-3",
+            "fio": "Testcrmpm1 Testcrmpm1 Testcrmpm1 (зам. Testcrmkredit2 Testcrmkredit2 Testcrmkredit2)",
+            "main": true,
+            "position": "TESTCRMPM1"
+          },
+          {
+            "posId": "1-AQ1N-114",
+            "fio": "Testcrmproblemmanager2 Testcrmproblemmanager2 Testcrmproblemmanager2",
+            "main": false,
+            "position": "TESTCRMPROBLEMMANAGER2"
+          }
+        ]
+      }
+    ],
+    "collegials": [
+      {
+        "name": "Credit Risk Review",
+        "description": "ТЕСТ",
+        "datePlan": "2001-12-17T09:30:47Z",
+        "dateFact": "2001-12-17T09:30:47Z",
+        "divisionSB": "Подразделение 1",
+        "osb": "ОСБ 1",
+        "internalDivision": "ВСП 2",
+        "result": "Одобрено",
+        "comment": "Комментарий 1",
+        "collegialSecretaries": [
+          {
+            "surname": "SMOGUCHEVA",
+            "name": "SMOGUCHEVA",
+            "thirdName": "SMOGUCHEVA",
+            "positionId": "1-9TWXL"
+          },
+          {
+            "surname": "USER266",
+            "name": "USER266",
+            "thirdName": "",
+            "positionId": "1-F4PGP"
+          }
+        ]
+      }
+    ]
+  }
+}

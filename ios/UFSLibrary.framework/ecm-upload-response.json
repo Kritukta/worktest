@@ -1,0 +1,83 @@
+{
+  "id" : "http://efs-mobile-ecm/upload-rs-wrap.json",
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "type" : "object",
+  "title" : "Загрузка файла в ecm",
+  "description" : "Загрузка файла в ecm",
+  "properties" : {
+    "success" : {
+      "type" : "boolean"
+    },
+    "messages" : {
+      "$schema" : "http://json-schema.org/draft-04/schema#",
+      "type" : "array",
+      "title" : "Список UI сообщений",
+      "items" : {
+        "type" : "object",
+        "title" : "UI сообщение",
+        "properties" : {
+          "title" : {
+            "type" : "string",
+            "title" : "Заголовок сообщения"
+          },
+          "text" : {
+            "type" : "string",
+            "title" : "Текст сообщения"
+          },
+          "type" : {
+            "type" : "string",
+            "title" : "Тип сообщения"
+          }
+        },
+        "additionalProperties" : false
+      }
+    },
+    "body" : {
+      "id" : "http://efs-mobile-ecm/upload-rs.json",
+      "$schema" : "http://json-schema.org/draft-04/schema#",
+      "type" : "object",
+      "title" : "Результат загрузки файла в ecm",
+      "description" : "Результат загрузки файла в ecm",
+      "properties" : {
+        "operationId" : {
+          "type" : "string",
+          "title" : "Идентификатор операции",
+          "maxLength" : 256
+        }
+      },
+      "additionalProperties" : false
+    },
+    "error" : {
+      "id" : "http://efs-mobile-ecm/error.json",
+      "$schema" : "http://json-schema.org/draft-04/schema#",
+      "type" : "object",
+      "title" : "Ошибка",
+      "description" : "Ошибка",
+      "properties" : {
+        "uuid" : {
+          "type" : "string",
+          "maxLength" : 80
+        },
+        "code" : {
+          "type" : "string",
+          "maxLength" : 100
+        },
+        "system" : {
+          "type" : "string",
+          "maxLength" : 50
+        },
+        "title" : {
+          "type" : "string",
+          "maxLength" : 255
+        },
+        "text" : {
+          "type" : "string",
+          "maxLength" : 4096
+        }
+      },
+      "additionalProperties" : false
+    }
+  },
+  "required" : [ "success" ],
+  "additionalProperties" : false
+}

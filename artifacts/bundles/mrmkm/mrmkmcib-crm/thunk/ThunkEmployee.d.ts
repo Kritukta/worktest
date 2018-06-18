@@ -1,0 +1,44 @@
+import * as ModelState from "../models/Models";
+import { Models as ModelsApp } from "mrmkmcib-app";
+import { Models as ModelsScheduler } from "mrmkmcib-scheduler";
+import { Enums } from '../Enums';
+import Error from "../models/Error";
+export declare const performSendEmail: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performSchedulerOpen: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performPopoverPersonListShow: () => (dispatch: Function) => void;
+export declare const performNavigateToAddressBookEmployee: (employeeId: string) => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performPopoverPersonListHide: () => (dispatch: Function) => void;
+export declare const performFindPeople: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performFlush: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performPersonSelect: (person: ModelsScheduler.Person) => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performFindPeopleSuccess: (data: ModelsScheduler.PersonList) => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performFindPeopleFailure: (error: Error) => (dispatch: Function) => void;
+export declare const navigateToEmployeeScreen: (employeeId: string, isExtendedMode: boolean, mode: Enums.EmployeeMode, historyAction?: Enums.EmployeeHistoryActions) => (dispatch: Function) => void;
+export declare const navigateToCustomerListScreen: () => (dispatch: Function) => void;
+export declare const performRefresh: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performRefreshSuccess: (data: boolean) => (dispatch: Function) => void;
+export declare const performRefreshFailure: (error: Error) => (dispatch: Function) => void;
+/**
+ * Thunk dispatched by "Employee" screen. Fetch currentEmployeeHead with current headId.
+ */
+export declare const callGetEmployeeHead: (head: ModelsApp.Employee) => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const refresh_callGetEmployee: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const callGetCustomerList: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const callGetSubordinateList: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const navigateBack: () => (dispatch: Function) => void;
+export declare const navigateBackEmployee: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performPopoverSubordinateShow: (subordinate: ModelsApp.Employee) => (dispatch: Function) => void;
+export declare const performPopoverSubordinateHide: () => (dispatch: Function) => void;
+export declare const performContainerReset: () => (dispatch: Function) => void;
+export declare const navigateEmployeeScreenBack: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const navigatePopoverBack: () => (dispatch: Function) => void;
+export declare const navigateToPersonContainerPopover: (person: ModelsScheduler.Person) => (dispatch: Function) => void;
+export declare const performErrorModalShow: () => (dispatch: Function) => void;
+export declare const performErrorModalHide: () => (dispatch: Function) => void;
+export declare const setEmployeeShedulerAvailabilityFalse: () => (dispatch: Function) => void;
+export declare const navigateToEmailScreen: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performCancelRefreshError: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performCancelSubordinateListError: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performCancelCustomerListError: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performCertificateAlertPopoverHide: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performCertificateAlertPopoverShow: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;

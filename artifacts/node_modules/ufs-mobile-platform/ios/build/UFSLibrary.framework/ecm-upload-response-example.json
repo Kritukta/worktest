@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "messages": [
+    {
+      "type": "occaec",
+      "text": "consequat ipsum"
+    },
+    {
+      "type": "mollit minim nostrud aliq"
+    }
+  ],
+  "error": {
+    "code": "minim laborum aliquip"
+  }
+}

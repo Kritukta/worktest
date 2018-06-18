@@ -1,0 +1,18 @@
+import * as ModelState from "../models/Models";
+import { Models as ModelsApp } from "mrmkmcib-app";
+import { Models } from "mrmkmcib-crm";
+import { Enums } from '../Enums';
+export declare const performOpenOccasionScreen: (occasion: Models.Occasion, occasionMode: Enums.OccasionMode, occasionContextMode: Enums.OccasionContextMode) => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performCloseOccasionScreen: (occasionContextMode: Enums.OccasionContextMode) => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performSave: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performChangeDisplayOccasionErrorModalWindow: (value: boolean) => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performValidate: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performCancel: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const navigateToOccasionTypePickerScreen: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performInputOccasionType: (value: ModelsApp.Classifier) => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performInputDate: (value: Date) => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performInputNoYear: (value: boolean) => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performInputComment: (value: string) => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const navigateBack: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performContainerReset: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;
+export declare const performEdit: () => (dispatch: Function, getState: () => ModelState.IRootState) => void;

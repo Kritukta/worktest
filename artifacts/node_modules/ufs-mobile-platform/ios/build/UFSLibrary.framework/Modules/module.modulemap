@@ -1,0 +1,6 @@
+framework module UFSLibrary {
+  umbrella header "UFSLibrary.h"
+
+  export *
+  module * { export * }
+}

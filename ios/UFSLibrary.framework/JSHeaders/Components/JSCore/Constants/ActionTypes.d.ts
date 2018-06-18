@@ -1,0 +1,16 @@
+export declare const SELECT_MENU_ITEM: string;
+export declare const POP_ACCESSORY: string;
+export declare const PUSH_ACCESSORY: string;
+export declare const POP_CONTENT: string;
+export declare const PUSH_CONTENT: string;
+export declare const POP_CONTENT_TO_TOP: string;
+export declare const POP_ACCESSORY_TO_TOP: string;
+export declare const POP_CONTENT_TO_PAGE: string;
+export declare const POP_ACCESSORY_TO_PAGE: string;
+export declare const WF_INIT: string;
+export declare const WF_SUCCESS: string;
+export declare const WF_SEND_COMMAND: string;
+export declare const WF_ERROR: string;
+export declare const WF_UPDATE_DATA: string;
+export declare const WF_HINT_VISIBILITY: string;
+export declare const WF_HINT_SWITCH_ENABLING: string;

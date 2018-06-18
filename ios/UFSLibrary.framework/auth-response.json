@@ -1,0 +1,11 @@
+{
+   "$schema":"http://json-schema.org/draft-04/schema#",
+   "title":"PersonnelNumber",
+   "description":"Response for personnel-number service",
+   "type":"object",
+   "properties":{
+      "success":{
+         "type":"boolean"
+      }
+   }
+}

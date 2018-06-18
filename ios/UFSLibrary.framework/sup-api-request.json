@@ -1,0 +1,59 @@
+{
+  "id": "http://sber-tech.com/efs/sup-api-request.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PARAM Request",
+  "description": "A request for parameter values",
+  "type": "object",
+  "properties": {
+    "criteria": {
+      "id": "#criteria",
+      "description": "The array of criteria elements",
+      "type": "array",
+      "items": {
+        "id": "#criteria-element",
+        "description": "The criteria element",
+        "type": "object",
+        "properties": {
+          "parameter": {
+            "description": "The parameter name [required]",
+            "type": "string"
+          },
+          "path": {
+            "description": "The path to parameter value [required]",
+            "type": "array",
+            "items": {
+              "id": "#path-element",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "Path element name [required]",
+                  "type": "string"
+                },
+                "value": {
+                  "description": "Path element value [required]",
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "name",
+                "value"
+              ]
+            },
+            "minItems": 1
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "parameter",
+          "path"
+        ]
+      },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "criteria"
+  ]
+}
